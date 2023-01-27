@@ -56,8 +56,7 @@
 		65BAECDC298426A9000A52E1 /* EggTimer */ = {
 			isa = PBXGroup;
 			children = (
-				65BAECDD298426A9000A52E1 /* AppDelegate.swift */,
-				65BAECDF298426A9000A52E1 /* SceneDelegate.swift */,
+				65BAECF4298428DE000A52E1 /* Application */,
 				65BAECE1298426A9000A52E1 /* MainViewController.swift */,
 				65BAECF329842740000A52E1 /* Resources */,
 			);
@@ -73,6 +72,15 @@
 				65BAECF129842739000A52E1 /* alarm_sound.mp3 */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		65BAECF4298428DE000A52E1 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				65BAECDD298426A9000A52E1 /* AppDelegate.swift */,
+				65BAECDF298426A9000A52E1 /* SceneDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
