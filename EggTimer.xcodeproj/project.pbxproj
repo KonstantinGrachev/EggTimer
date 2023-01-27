@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		65BAECDE298426A9000A52E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BAECDD298426A9000A52E1 /* AppDelegate.swift */; };
 		65BAECE0298426A9000A52E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BAECDF298426A9000A52E1 /* SceneDelegate.swift */; };
-		65BAECE2298426A9000A52E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BAECE1298426A9000A52E1 /* ViewController.swift */; };
-		65BAECE5298426A9000A52E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BAECE3298426A9000A52E1 /* Main.storyboard */; };
+		65BAECE2298426A9000A52E1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BAECE1298426A9000A52E1 /* MainViewController.swift */; };
 		65BAECE7298426AA000A52E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65BAECE6298426AA000A52E1 /* Assets.xcassets */; };
 		65BAECEA298426AA000A52E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BAECE8298426AA000A52E1 /* LaunchScreen.storyboard */; };
+		65BAECF229842739000A52E1 /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65BAECF129842739000A52E1 /* alarm_sound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		65BAECDA298426A9000A52E1 /* EggTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EggTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65BAECDD298426A9000A52E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65BAECDF298426A9000A52E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		65BAECE1298426A9000A52E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		65BAECE4298426A9000A52E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		65BAECE1298426A9000A52E1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		65BAECE6298426AA000A52E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65BAECE9298426AA000A52E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65BAECEB298426AA000A52E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65BAECF129842739000A52E1 /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_sound.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +58,21 @@
 			children = (
 				65BAECDD298426A9000A52E1 /* AppDelegate.swift */,
 				65BAECDF298426A9000A52E1 /* SceneDelegate.swift */,
-				65BAECE1298426A9000A52E1 /* ViewController.swift */,
-				65BAECE3298426A9000A52E1 /* Main.storyboard */,
+				65BAECE1298426A9000A52E1 /* MainViewController.swift */,
+				65BAECF329842740000A52E1 /* Resources */,
+			);
+			path = EggTimer;
+			sourceTree = "<group>";
+		};
+		65BAECF329842740000A52E1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				65BAECE6298426AA000A52E1 /* Assets.xcassets */,
 				65BAECE8298426AA000A52E1 /* LaunchScreen.storyboard */,
 				65BAECEB298426AA000A52E1 /* Info.plist */,
+				65BAECF129842739000A52E1 /* alarm_sound.mp3 */,
 			);
-			path = EggTimer;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +134,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				65BAECEA298426AA000A52E1 /* LaunchScreen.storyboard in Resources */,
+				65BAECF229842739000A52E1 /* alarm_sound.mp3 in Resources */,
 				65BAECE7298426AA000A52E1 /* Assets.xcassets in Resources */,
-				65BAECE5298426A9000A52E1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65BAECE2298426A9000A52E1 /* ViewController.swift in Sources */,
+				65BAECE2298426A9000A52E1 /* MainViewController.swift in Sources */,
 				65BAECDE298426A9000A52E1 /* AppDelegate.swift in Sources */,
 				65BAECE0298426A9000A52E1 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +155,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		65BAECE3298426A9000A52E1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				65BAECE4298426A9000A52E1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		65BAECE8298426AA000A52E1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,10 +289,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U5F242W6NH;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EggTimer/Info.plist;
+				INFOPLIST_FILE = EggTimer/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -317,10 +316,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U5F242W6NH;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EggTimer/Info.plist;
+				INFOPLIST_FILE = EggTimer/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
